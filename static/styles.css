@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Headings */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Custom File Upload Button */
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    background-color: #2e6da4;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Hide the actual file input */
+input[type="file"] {
+    display: none;
+}
+
+/* Selected File Name */
+#file-selected {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #449d44;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Submit Button Hover */
+input[type="submit"]:hover {
+    background-color: #398439;
+}
+
+/* Loading Indicator */
+#loading {
+    font-size: 18px;
+    color: #2e6da4;
+    margin-top: 15px;
+}
+
+/* Flash Messages */
+.flashes {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.flashes li {
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 10px;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .custom-file-upload,
+    input[type="submit"] {
+        width: 100%;
+        font-size: 18px;
+    }
+}
